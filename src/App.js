@@ -5,12 +5,12 @@ import About from "./components/About";
 import Journal from "./components/Journal";
 import Conference from "./components/Conference";
 import Certification from "./components/Certification";
-
+import Membership from "./components/Membership";
 
 import Contact from "./components/Contact";
-import ABDC from "./pages/ABDC";
+import SCI from "./pages/SCI";
 import Scopus from "./pages/Scopus";
-import WebOfScience from "./pages/WebOfScience"
+import UGC from "./pages/UGC";
 function App() {
   return (
     <Router>
@@ -21,12 +21,12 @@ function App() {
         <Route path="/journal" element={<Journal />} />
         <Route path="/conference" element={<Conference />} />
         <Route path="/certification" element={<Certification />} />
-        
+        <Route path="/membership" element={<Membership />} />
         
         <Route path="/contact" element={<Contact />} />
-        <Route path="/abdc" element={<ABDC />} />
+        <Route path="/sci" element={<SCI />} />
         <Route path="/scopus" element={<Scopus />} />
-        <Route path="/web" element={<WebOfScience />} />
+        <Route path="/ugc" element={<UGC />} />
       </Routes>
     </Router>
   );

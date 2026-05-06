@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
-import "./Scopus.css"; // you can reuse same CSS
+import "./Scopus.css";
 
-function WebOfScience() {
-  const [web, setWeb] = useState([]);
+function SCI() {
+  const [sci, setSci] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,9 +12,9 @@ function WebOfScience() {
 
       const data = querySnapshot.docs
         .map(doc => doc.data())
-        .filter(item => item.category === "Web of Science");
+        .filter(item => item.category === "SCI");
 
-      setWeb(data);
+      setSci(data);
     };
 
     fetchData();
@@ -22,15 +22,13 @@ function WebOfScience() {
 
   return (
     <section className="journal">
-
-      <h1 className="journal-title">Web of Science</h1>
+      <h1 className="journal-title">SCI Journal</h1>
 
       <div className="journal-card">
-
         <ol style={{ paddingLeft: "20px" }}>
-          {web.map((item, index) => (
+          {sci.map((item, index) => (
             <li key={index} className="journal-item">
-              
+
               <span className="journal-text">
                 <strong>{index + 1}.</strong>{" "}
                 {item.author}, {item.title}, {item.year}
@@ -48,11 +46,9 @@ function WebOfScience() {
             </li>
           ))}
         </ol>
-
       </div>
-
     </section>
   );
 }
 
-export default WebOfScience;
+export default SCI;

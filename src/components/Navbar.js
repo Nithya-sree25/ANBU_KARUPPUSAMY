@@ -72,25 +72,25 @@ function Navbar() {
 
               <li>
                 <Link
-                  to="/web"
+                  to="/ugc"
                   onClick={() => {
                     setMenuOpen(false);
                     setOpen(false);
                   }}
                 >
-                  Web of Science
+                  UGC Journal
                 </Link>
               </li>
 
               <li>
   <Link
-    to="/abdc"
+    to="/sci"
     onClick={() => {
       setMenuOpen(false);
       setOpen(false);
     }}
   >
-    ABDC Journal
+    SCI Journal
   </Link>
 </li>
 
@@ -104,7 +104,11 @@ function Navbar() {
             Conference
           </Link>
         </li>
-
+           <li>
+          <Link to="/membership" onClick={() => setMenuOpen(false)}>
+            Membership
+          </Link>
+        </li>
        
 
         

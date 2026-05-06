@@ -3,8 +3,8 @@ import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import "./Scopus.css";
 
-function ABDC() {
-  const [abdc, setAbdc] = useState([]);
+function UGC() {
+  const [ugc, setUgc] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,9 +12,9 @@ function ABDC() {
 
       const data = querySnapshot.docs
         .map(doc => doc.data())
-        .filter(item => item.category === "ABDC");
+        .filter(item => item.category === "UGC");
 
-      setAbdc(data);
+      setUgc(data);
     };
 
     fetchData();
@@ -22,22 +22,37 @@ function ABDC() {
 
   return (
     <section className="journal">
-      <h1 className="journal-title">ABDC Journal</h1>
+
+      <h1 className="journal-title">UGC Journal</h1>
 
       <div className="journal-card">
+
         <ol style={{ paddingLeft: "20px" }}>
-          {abdc.map((item, index) => (
+          {ugc.map((item, index) => (
             <li key={index} className="journal-item">
+
               <span className="journal-text">
                 <strong>{index + 1}.</strong>{" "}
                 {item.author}, {item.title}, {item.year}
               </span>
+
+              {item.pdf && (
+                <button
+                  className="pdf-btn"
+                  onClick={() => window.open(item.pdf, "_blank")}
+                >
+                  View PDF
+                </button>
+              )}
+
             </li>
           ))}
         </ol>
+
       </div>
+
     </section>
   );
 }
 
-export default ABDC;
+export default UGC;

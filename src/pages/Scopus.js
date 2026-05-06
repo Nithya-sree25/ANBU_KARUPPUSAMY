@@ -11,7 +11,7 @@ function Scopus() {
       const querySnapshot = await getDocs(collection(db, "scopusjournals"));
       const data = querySnapshot.docs.map(doc => doc.data());
 
-      setScopus(data);
+      setScopus(data);  
     };
 
     fetchData();
