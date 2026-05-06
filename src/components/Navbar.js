@@ -25,7 +25,7 @@ function Navbar() {
     <nav className="navbar" ref={navRef}>
       
       {/* Logo */}
-      <h2 className="logo">Dr.KISHORE KUNAL</h2>
+      <h2 className="logo">Dr. S.ANBU KARUPPUSAMY</h2>
 
       {/* Hamburger */}
       <div

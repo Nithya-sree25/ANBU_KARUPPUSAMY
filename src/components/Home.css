@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: flex-start; /* 🔥 fixes top spacing */
   padding: 10px 60px 20px;
-  background: #f8f7f7;
+  background: #f1f0f0;
   box-sizing: border-box;
   gap: 40px;
 
@@ -32,21 +32,24 @@ body {
 .intro {
   font-size: 22px;
   color: #555;
-  margin: 0;
-  margin-top: 80px;
+  margin: 10;
+  margin-top: 100px;
+  margin-left: 30px;
 }
 
 /* NAME */
 .name {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   margin: 10px 0;
+  margin-left: 30px;
 }
 
 /* ROLE */
 .roles {
   color: #2b6cb0;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 /* DESCRIPTION */
@@ -55,6 +58,7 @@ body {
   line-height: 1.6;
   margin-bottom: 25px;
   text-align: justify;
+  margin-left: 30px;
 }
 
 /* BUTTON */
@@ -66,6 +70,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   margin-bottom: 40px;
+  margin-left: 30px;
 }
 
 .connect-btn:hover {
@@ -81,10 +86,10 @@ body {
 }
 
 .home-right img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
   object-fit: cover;
-  border: 3px solid #cabcbc;
+  /* border: 3px solid #cabcbc; */
   border-radius: 10px;
 }
 
