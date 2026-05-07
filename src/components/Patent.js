@@ -28,6 +28,35 @@ function Patent() {
     <section className="patent">
 
       <h1 className="patent-title">PATENT</h1>
+      {/* MOBILE VIEW CARDS */}
+<div className="mobile-patent-list">
+
+  {patents.map((item, index) => (
+
+    <div className="mobile-patent-card" key={index}>
+
+      <h3>Patent {index + 1}</h3>
+
+      <p>
+        <strong>Title:</strong>
+        {item.title}
+      </p>
+
+      <p>
+        <strong>Application Number:</strong>
+        {item.applicationNumber}
+      </p>
+
+      <p>
+        <strong>Published:</strong>
+        {item.published}
+      </p>
+
+    </div>
+
+  ))}
+
+</div>
 
       <div className="table-container">
 

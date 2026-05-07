@@ -66,3 +66,58 @@
   }
 
 }
+/* MOBILE CARD */
+.mobile-research-card {
+  display: none;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+  /* HIDE TABLE */
+  .research-table-container {
+    display: none;
+  }
+
+  /* SHOW CARD */
+  .mobile-research-card {
+    display: block;
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    border-left: 5px solid #2b6cb0;
+
+    margin-top: 20px;
+  }
+
+  .mobile-research-card h3 {
+    color: #2b6cb0;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .mobile-research-card p {
+    margin-bottom: 14px;
+
+    line-height: 1.7;
+
+    color: #444;
+  }
+
+  .mobile-research-card strong {
+    display: block;
+
+    color: #0A192F;
+
+    margin-bottom: 5px;
+  }
+
+}

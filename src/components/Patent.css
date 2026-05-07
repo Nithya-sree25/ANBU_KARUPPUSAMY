@@ -60,3 +60,60 @@
   }
 
 }
+/* MOBILE CARD VIEW */
+.mobile-patent-list {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* HIDE TABLE */
+  .table-container {
+    display: none;
+  }
+
+  /* SHOW CARDS */
+  .mobile-patent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-patent-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    border-left: 5px solid #2b6cb0;
+  }
+
+  .mobile-patent-card h3 {
+    color: #2b6cb0;
+
+    margin-bottom: 15px;
+  }
+
+  .mobile-patent-card p {
+    margin-bottom: 12px;
+
+    line-height: 1.7;
+
+    color: #444;
+
+    text-align: left;
+  }
+
+  .mobile-patent-card strong {
+    display: block;
+
+    color: #0A192F;
+
+    margin-bottom: 5px;
+  }
+
+}

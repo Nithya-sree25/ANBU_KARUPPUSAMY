@@ -9,7 +9,47 @@ function ResearchGuidance() {
       <h1 className="research-title">
         RESEARCH GUIDANCE
       </h1>
+      {/* MOBILE VIEW */}
+<div className="mobile-research-card">
 
+  <h3>Ph.D Research Guidance</h3>
+
+  <p>
+    <strong>Supervisor ID:</strong>
+    2840118
+  </p>
+
+  <p>
+    <strong>Research Centre No:</strong>
+    4730907
+  </p>
+
+  <p>
+    <strong>Department:</strong>
+    ECE / Excel Engineering College
+  </p>
+
+  <p>
+    <strong>Role:</strong>
+    Supervisor / Joint Supervisor
+  </p>
+
+  <p>
+    <strong>Scholars Pursuing:</strong>
+    9
+  </p>
+
+  <p>
+    <strong>Degree Awarded:</strong>
+    9
+  </p>
+
+  <p>
+    <strong>Submitted Thesis:</strong>
+    4
+  </p>
+
+</div>
       <div className="research-table-container">
 
         <table className="research-table">
