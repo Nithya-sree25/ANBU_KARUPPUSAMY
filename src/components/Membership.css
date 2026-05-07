@@ -50,6 +50,23 @@
   .membership-grid {
     grid-template-columns: 1fr;
   }
+  .ad-box a {
+    font-size: 14px;
+
+    word-break: break-all;
+
+    line-height: 1.6;
+  }
+
+  .ad-box img {
+    max-width: 100px;
+  }
+
+  .membership-title {
+    font-size: 19px;
+
+    line-height: 1.5;
+  }
 }
 /* TOP ADS SECTION */
 .top-ads {
