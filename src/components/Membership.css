@@ -54,20 +54,30 @@
 /* TOP ADS SECTION */
 .top-ads {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  max-width: 1000px;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+
+  max-width: 800px;
+
   margin: 0 auto 40px;
-  border: 1px solid #ccc;
 }
 
 /* EACH BOX */
 .ad-box {
-  padding: 15px;
-  background: #f8f8f8;
+  padding: 25px;
+
+  background: white;
+
   text-align: center;
-  border-right: 1px solid #ccc;
-}
+
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+} 
 
 .ad-box:last-child {
   border-right: none;
@@ -100,4 +110,11 @@
   text-decoration: underline;
   font-size: 14px;
   word-break: keep-all; /* prevents breaking */
+}
+@media (max-width: 768px) {
+
+  .top-ads {
+    grid-template-columns: 1fr;
+  }
+
 }

@@ -99,25 +99,30 @@ function Navbar() {
           )}
         </li>
 
-        <li>
-          <Link to="/conference" onClick={() => setMenuOpen(false)}>
-            Conference
-          </Link>
-        </li>
+       
            <li>
           <Link to="/membership" onClick={() => setMenuOpen(false)}>
             Membership
           </Link>
         </li>
-       
-
         
-
+           <li>
+          <Link to="/patent" onClick={() => setMenuOpen(false)}>
+            Patent
+          </Link>
+        </li>
        <li>
-  <Link to="/certification" onClick={() => setMenuOpen(false)}>
-    Certification
+  <Link
+    to="/research-guidance"
+    onClick={() => setMenuOpen(false)}
+  >
+    Research Guidance
   </Link>
 </li>
+    <Link to="/achievements" onClick={() => setMenuOpen(false)}>
+  Achievements
+</Link>
+        
 
         
 

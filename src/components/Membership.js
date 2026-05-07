@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Membership.css";
 
-import scopus from "../assets/scoups.png";
+
 import orcid from "../assets/orcid.png";
 import wos from "../assets/webofscience.png";
 
@@ -36,33 +36,21 @@ function Membership() {
 
         <div className="ad-box">
           <img src={wos} alt="Web of Science" />
-          <p>Scopus Author ID: 57202000286</p>
+          <p>Scopus Author ID: 54684176200</p>
         </div>
 
         <div className="ad-box">
           <img src={orcid} alt="ORCID" />
 
           <a
-            href="https://orcid.org/0000-0002-8687-7887"
+            href="https://orcid.org/0000-0003-0490-4341"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://orcid.org/0000-0002-8687-7887
+            https://orcid.org/0000-0003-0490-4341
           </a>
         </div>
 
-        <div className="ad-box">
-          <img src={scopus} alt="Scopus" />
-
-          <a
-            href="https://www.webofscience.com/wos/author/record/JDV-8851-2023"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ad-link"
-          >
-            Web of Science Profile
-          </a>
-        </div>
 
       </div>
 

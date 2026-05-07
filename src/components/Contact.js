@@ -14,7 +14,7 @@ function Contact() {
       {/* PROFILE */}
       <div className="profile">
         <div className="profile-img">Dr R</div>
-        <h2>Dr.KISHORE KUNAL</h2>
+        <h2>Dr.S.ANBU KARUPPUSAMY</h2>
       </div>
 
       {/* EMAIL */}
@@ -22,8 +22,8 @@ function Contact() {
         <h3>📧 Email</h3>
 
         <div className="row">
-          <span>kishore.sona@gmail.com</span>
-          <button onClick={() => copyText("kishore.sona@gmail.com")}>Copy</button>
+          <span>anbuksamy@gmail.com</span>
+          <button onClick={() => copyText("anbuksamy@gmail.com")}>Copy</button>
         </div>
 
       </div>
@@ -37,19 +37,13 @@ function Contact() {
   <h3>📞 Phone Number</h3>
 
   <div className="row">
-    <span>+91 82524-41005</span>
+    <span>+919715615327</span>
 
-    <button onClick={() => copyText("+91 82524-41005")}>
+    <button onClick={() => copyText("+919715615327")}>
       Copy
     </button>
   </div>
-  <div className="row">
-    <span>+91 8376002441</span>
-
-    <button onClick={() => copyText("+91 8376002441")}>
-      Copy
-    </button>
-  </div>
+ 
 </div>
 
       {/* FORM */}
